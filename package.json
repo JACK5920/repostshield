@@ -1,0 +1,13 @@
+{
+  "name": "repostshield",
+  "version": "0.1.0",
+  "private": true,
+  "description": "RepostShield - repurpose one piece of content into 6 platform-native posts with a compliance check. No build step needed.",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

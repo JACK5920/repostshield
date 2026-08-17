@@ -1,0 +1,7 @@
+# 密钥——永远不要提交到 GitHub（否则别人能偷用你的 AI 额度）
+.env
+.env.local
+
+# 本地杂项
+node_modules/
+.DS_Store

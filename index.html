@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RepostShield — One idea. Every platform. Zero strikes.</title>
+  <meta name="description" content="Turn one piece of content into 6 platform-native posts — and scan every one for duplicate-content, AI-detection, and community-guideline risks before you hit publish." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: dark; }
+    html { scroll-behavior: smooth; }
+    body { background: #0a0a12; }
+    .glow { text-shadow: 0 0 24px rgba(139,92,246,.55); }
+    .gradient-text {
+      background: linear-gradient(90deg,#a78bfa,#22d3ee);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .card-glow:hover { border-color: rgba(139,92,246,.55); box-shadow: 0 0 30px rgba(139,92,246,.15); }
+    .fade-in { animation: fadeIn .5s ease both; }
+    @keyframes fadeIn { from { opacity:0; transform: translateY(8px);} to { opacity:1; transform:none;} }
+    .spinner {
+      width: 18px; height: 18px; border: 2px solid rgba(255,255,255,.3);
+      border-top-color: #fff; border-radius: 50%; animation: spin .7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .sev-high { color:#f87171; background:rgba(248,113,113,.12); border-color:rgba(248,113,113,.4);}
+    .sev-medium { color:#fbbf24; background:rgba(251,191,36,.12); border-color:rgba(251,191,36,.4);}
+    .sev-low { color:#34d399; background:rgba(52,211,153,.12); border-color:rgba(52,211,153,.4);}
+  </style>
+</head>
+<body class="text-gray-100 antialiased">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 border-b border-white/5 bg-[#0a0a12]/80 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <a href="#top" class="flex items-center gap-2 font-bold text-lg">
+        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-violet-500 to-cyan-400 text-sm">🛡</span>
+        RepostShield
+      </a>
+      <nav class="hidden items-center gap-6 text-sm text-gray-400 md:flex">
+        <a href="#how" class="hover:text-white">How it works</a>
+        <a href="#features" class="hover:text-white">Features</a>
+        <a href="#pricing" class="hover:text-white">Pricing</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
+      </nav>
+      <a href="#workspace" class="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold hover:bg-violet-500">Try it free</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="mx-auto max-w-6xl px-4 pt-16 pb-10 text-center">
+    <p class="mb-4 text-sm font-medium tracking-wide text-violet-400">FOR INDEPENDENT CREATORS</p>
+    <h1 class="mx-auto max-w-3xl text-4xl font-extrabold leading-tight sm:text-6xl">
+      One idea.<br />
+      <span class="gradient-text glow">Every platform. Zero strikes.</span>
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg text-gray-400">
+      RepostShield turns one piece of content into 6 platform-native posts — and scans every one for
+      <span class="text-gray-200">duplicate-content</span>,
+      <span class="text-gray-200">AI-detection</span>, and
+      <span class="text-gray-200">community-guideline</span> risks <em>before</em> you hit publish.
+    </p>
+    <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+      <a href="#workspace" class="w-full rounded-xl bg-violet-600 px-6 py-3 text-lg font-semibold hover:bg-violet-500 sm:w-auto">Try it free — 3 rewrites a day</a>
+      <a href="#how" class="w-full rounded-xl border border-white/10 px-6 py-3 text-lg font-semibold hover:bg-white/5 sm:w-auto">See how it works</a>
+    </div>
+    <p class="mt-4 text-sm text-gray-500">No credit card required · Set up in 60 seconds</p>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="mx-auto max-w-6xl px-4 py-14">
+    <h2 class="text-center text-3xl font-bold">From one idea to six posts in three steps</h2>
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <div class="card-glow rounded-2xl border border-white/10 bg-white/[.03] p-6">
+        <div class="text-3xl">1️⃣</div>
+        <h3 class="mt-3 text-lg font-semibold">Paste</h3>
+        <p class="mt-2 text-sm text-gray-400">Drop in one piece of content — a script, a caption, or a raw idea.</p>
+      </div>
+      <div class="card-glow rounded-2xl border border-white/10 bg-white/[.03] p-6">
+        <div class="text-3xl">2️⃣</div>
+        <h3 class="mt-3 text-lg font-semibold">Rewrite</h3>
+        <p class="mt-2 text-sm text-gray-400">Get native versions for YouTube, Instagram, TikTok, X, LinkedIn & Facebook.</p>
+      </div>
+      <div class="card-glow rounded-2xl border border-white/10 bg-white/[.03] p-6">
+        <div class="text-3xl">3️⃣</div>
+        <h3 class="mt-3 text-lg font-semibold">Publish safely</h3>
+        <p class="mt-2 text-sm text-gray-400">Review your compliance report, apply one-click fixes, copy and go.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workspace / Tool -->
+  <section id="workspace" class="mx-auto max-w-6xl scroll-mt-20 px-4 py-14">
+    <h2 class="text-center text-3xl font-bold">Try the workspace</h2>
+    <p class="mt-2 text-center text-gray-400">Free plan: <span id="usageText" class="font-semibold text-violet-400">3 rewrites a day</span></p>
+
+    <div class="mt-8 grid gap-6 lg:grid-cols-5">
+      <!-- Input panel -->
+      <div class="rounded-2xl border border-white/10 bg-white/[.03] p-5 lg:col-span-2">
+        <label class="text-sm font-semibold text-gray-300" for="content">Your content (script / caption / idea)</label>
+        <textarea id="content" rows="9"
+          class="mt-2 w-full rounded-xl border border-white/10 bg-black/40 p-3 text-sm outline-none focus:border-violet-500"
+          placeholder="Paste your YouTube script, newsletter, or even a rough idea here…"></textarea>
+
+        <p class="mt-4 text-sm font-semibold text-gray-300">Target platforms</p>
+        <div id="platforms" class="mt-2 grid grid-cols-2 gap-2"></div>
+
+        <button id="generateBtn"
+          class="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-500 px-4 py-3 font-semibold hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50">
+          <span id="btnLabel">Generate for all platforms</span>
+        </button>
+        <p id="errMsg" class="mt-3 hidden rounded-lg border border-red-500/40 bg-red-500/10 p-2 text-sm text-red-300"></p>
+        <div id="upgradeBox" class="mt-3 hidden rounded-lg border border-amber-500/40 bg-amber-500/10 p-3 text-sm text-amber-200">
+          You've hit your <b>free limit for today</b>. Upgrade to keep creating:
+          <a id="upgradeLink" href="#" target="_blank" rel="noopener" class="block w-max mt-1 font-semibold text-amber-100 underline">Upgrade to Creator →</a>
+        </div>
+      </div>
+
+      <!-- Results panel -->
+      <div class="rounded-2xl border border-white/10 bg-white/[.03] p-5 lg:col-span-3">
+        <div id="emptyState" class="py-16 text-center text-gray-500">
+          <div class="text-5xl">📝</div>
+          <p class="mt-4">Paste your content, pick platforms, and hit Generate.<br />Your platform-native drafts + compliance report will appear here.</p>
+        </div>
+        <div id="loading" class="hidden py-16 text-center">
+          <div class="spinner mx-auto"></div>
+          <p class="mt-4 text-gray-400">Rewriting & running the compliance check… (~10s)</p>
+        </div>
+        <div id="results" class="hidden space-y-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="mx-auto max-w-6xl px-4 py-14">
+    <h2 class="text-center text-3xl font-bold">Everything you need to repurpose. Nothing you don't.</h2>
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <div class="card-glow rounded-2xl border border-white/10 bg-white/[.03] p-6">
+        <div class="text-3xl">🔄</div>
+        <h3 class="mt-3 text-lg font-semibold">Rewrite Engine</h3>
+        <p class="mt-2 text-sm text-gray-400">One idea becomes 6 platform-native posts: same message, never duplicate.</p>
+      </div>
+      <div class="card-glow rounded-2xl border border-white/10 bg-white/[.03] p-6">
+        <div class="text-3xl">🛡️</div>
+        <h3 class="mt-3 text-lg font-semibold">Compliance Check</h3>
+        <p class="mt-2 text-sm text-gray-400">Flags duplicate-content risk, AI-heavy phrasing, and policy red flags — with one-click fixes built in.</p>
+      </div>
+      <div class="card-glow rounded-2xl border border-white/10 bg-white/[.03] p-6">
+        <div class="text-3xl">🚀</div>
+        <h3 class="mt-3 text-lg font-semibold">Ready-to-Post Drafts</h3>
+        <p class="mt-2 text-sm text-gray-400">Titles, descriptions, hashtags and thumbnail notes, copied and exported in one click.</p>
+      </div>
+    </div>
+
+    <!-- Differentiator -->
+    <div class="card-glow mt-10 rounded-2xl border border-violet-500/30 bg-gradient-to-r from-violet-900/30 to-cyan-900/30 p-8 text-center">
+      <h3 class="text-2xl font-bold">Publish with a shield, not a prayer.</h3>
+      <p class="mx-auto mt-3 max-w-2xl text-gray-300">
+        Most AI tools make it <b>easier to post</b> — and easier to get flagged. RepostShield is built
+        <b>compliance-first</b>: it checks every draft against platform community rules, duplicate-content signals,
+        and AI-detection heuristics, and fixes problems before you publish. Our rule library is updated as platforms
+        update their policies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="mx-auto max-w-5xl px-4 py-14">
+    <h2 class="text-center text-3xl font-bold">Start free. Upgrade when it pays for itself.</h2>
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      <div class="rounded-2xl border border-white/10 bg-white/[.03] p-8">
+        <h3 class="text-xl font-bold">Free</h3>
+        <p class="mt-1 text-4xl font-extrabold">$0</p>
+        <ul class="mt-5 space-y-2 text-sm text-gray-300">
+          <li>✅ 3 rewrites per day</li>
+          <li>✅ Basic compliance report</li>
+          <li>✅ Export to 2 platforms</li>
+        </ul>
+        <a href="#workspace" class="mt-6 block rounded-xl border border-white/10 px-4 py-3 text-center font-semibold hover:bg-white/5">Try it free</a>
+      </div>
+      <div class="rounded-2xl border-2 border-violet-500 bg-violet-600/10 p-8">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-bold">Creator</h3>
+          <span class="rounded-full bg-violet-600 px-3 py-1 text-xs font-bold">Most popular</span>
+        </div>
+        <p class="mt-1 text-4xl font-extrabold">$15<span class="text-base font-normal text-gray-400">/month</span></p>
+        <ul class="mt-5 space-y-2 text-sm text-gray-200">
+          <li>✅ Unlimited rewrites</li>
+          <li>✅ Full compliance report + one-click fixes</li>
+          <li>✅ Export to all 6 platforms</li>
+          <li>✅ Cancel anytime</li>
+        </ul>
+        <a id="upgradeBtn2" href="#" target="_blank" rel="noopener" class="mt-6 block rounded-xl bg-violet-600 px-4 py-3 text-center font-semibold hover:bg-violet-500">Upgrade to Creator</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="mx-auto max-w-3xl px-4 py-14">
+    <h2 class="text-center text-3xl font-bold">FAQ</h2>
+    <div class="mt-8 space-y-3">
+      <details class="rounded-xl border border-white/10 bg-white/[.03] p-4">
+        <summary class="cursor-pointer font-semibold">Will platforms penalize AI-assisted content?</summary>
+        <p class="mt-2 text-sm text-gray-400">Platforms don't ban AI-assisted content — they penalize <em>low-effort, duplicate, or policy-violating</em> content. That's exactly what we check for, and fix before you publish.</p>
+      </details>
+      <details class="rounded-xl border border-white/10 bg-white/[.03] p-4">
+        <summary class="cursor-pointer font-semibold">Do I need any editing or technical skills?</summary>
+        <p class="mt-2 text-sm text-gray-400">None. Paste your content, pick your platforms, and copy the drafts. That's it.</p>
+      </details>
+      <details class="rounded-xl border border-white/10 bg-white/[.03] p-4">
+        <summary class="cursor-pointer font-semibold">Which platforms do you support?</summary>
+        <p class="mt-2 text-sm text-gray-400">YouTube, Instagram, TikTok, X, LinkedIn and Facebook — more coming.</p>
+      </details>
+      <details class="rounded-xl border border-white/10 bg-white/[.03] p-4">
+        <summary class="cursor-pointer font-semibold">Can I cancel anytime?</summary>
+        <p class="mt-2 text-sm text-gray-400">Yes. Cancel in one click and keep access until the end of your billing period.</p>
+      </details>
+      <details class="rounded-xl border border-white/10 bg-white/[.03] p-4">
+        <summary class="cursor-pointer font-semibold">Is my content safe?</summary>
+        <p class="mt-2 text-sm text-gray-400">Your content is only used to generate your drafts and is never shared or used to train models.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="border-t border-white/5 px-4 py-16 text-center">
+    <h2 class="text-3xl font-extrabold sm:text-4xl">Stop reposting. Start repurposing.</h2>
+    <a href="#workspace" class="mt-6 inline-block rounded-xl bg-violet-600 px-8 py-3 text-lg font-semibold hover:bg-violet-500">Start free — 3 rewrites a day</a>
+    <p class="mt-3 text-sm text-gray-500">No credit card required · Cancel anytime</p>
+  </section>
+
+  <footer class="border-t border-white/5 px-4 py-8 text-center text-sm text-gray-500">
+    <p class="font-semibold text-gray-400">RepostShield — Post everywhere. Get flagged nowhere.</p>
+    <p class="mt-2">© <span id="year"></span> RepostShield. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
